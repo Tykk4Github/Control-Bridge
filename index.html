@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Control Bridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#" onclick="displayMessage('You are already home!');">home</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">facebook</a></li>
+                <li><a href="#" onclick="displayMessage('Comming soon!');">More!</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Welcome!</h1>
+            <p>© 2024 Tykk's Awesome Corner</p>
+            <div>
+                <button class="button" type="button" onclick="goToOriginalWebsite()">Original Website!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function displayMessage(message) {
+            alert(message);
+        }
+
+        function goToOriginalWebsite() {
+            // You can replace the following URL with the actual URL of your original website.
+            window.location.href = "https://bridge-saudi.com/";
+        }
+    </script>
+</body>
+
+</html>
